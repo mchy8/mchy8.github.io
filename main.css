@@ -1,0 +1,9 @@
+main.css
+
+ul.hashtag {list-style: upper-roman;}
+ul.hashtag > li { /*all the direct children*/}
+/*if there is a space- scoping selection so not all of the bullets are modified*/
+
+.box{ width: 100px;
+height: 100px;
+these propoerties want coordinates }
