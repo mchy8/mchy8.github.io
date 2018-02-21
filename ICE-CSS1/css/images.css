@@ -1,0 +1,9 @@
+.hover:hover{
+	opacity:0.5;
+}
+.active:active{
+	filter: grayscale(100%);
+}
+.focus:focus{
+	contrast:200%;
+}
