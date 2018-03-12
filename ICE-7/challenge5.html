@@ -39,6 +39,20 @@
 	<script type="text/javascript">
 	// I used Two functions here.  Starter idea at: 
 	// https://codepen.io/ColleenEMc/pen/XmZzWw
+	// $(".preview").on("mouseover", function(){}
+	$(".preview").on('focus mouseover', function(){
+	$(".#image").text($(this).attr("alt"));
+	$(".selector").css('background-image', 'url("' + $(this).attr));
+
+	})
+	$(".selector").on('events', function(){
+	$(".selector").text("Hover over an image below"));
+	$(".selector").css('background-image', '')
+	}
+
+		)
+	
+
 	</script>
 </head>
 
