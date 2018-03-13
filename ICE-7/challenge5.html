@@ -35,7 +35,7 @@
 		text-align: center;
 	}
 	</style>
-
+	<script type = "text/javascript" src = 'https://cdnjs.cloudflare.com'></script>
 	<script type="text/javascript">
 	// I used Two functions here.  Starter idea at: 
 	// https://codepen.io/ColleenEMc/pen/XmZzWw
@@ -51,12 +51,42 @@
 	}
 
 		)
+	var whenIAmReady = function(){
+		var mainImage = $("#image");
+		var previewImages = $(".preview");
+		};
+	// step 2 bind events 
+	//name of the event you want to listen
+	//the function you want to execute when that event happens 
+	previewImages.on("mouseenter", function(){
+		console.log("hovered!");
+
+		var p_src = "";
+		var p_alt = "";
+
+
+	});
+	previewImages.on("mouseleave", function(){
+		console.log("Not Hovered!");
+
+
 	
+		var myCurrentPreviewImage = $(this);
+		var p_src = myCurrentPreviewImage.attr("src");
+		var p_alt = myCurrentPreviewImage.attr("alt");
+
+		mainImage.text(p_alt);
+		mainImage.css("background", "url("+ p_src+ ")");
+
+	});
+
+
+
 
 	</script>
 </head>
 
-<body>
+<body onload= "whenIAmReady()">
 	<h1>Challenge 5</h1>
 		<div id = "image">
 			Hover over an image below.
