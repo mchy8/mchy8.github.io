@@ -15,23 +15,29 @@
       <h4><u>Basic Information</u></h4>
    <div>
 	</a>
+	<p>
+		<button class= "btn btn-primary" type= "button" data-toggle= "collapse"  data-target="#collapseExample" aria-expanded= "false" aria-controls= "collapseExample">Collapse</button>
+	</p>
 
+	<div class= "collapse" id = "collapseExample">
+		<div class = "card card-body">
       	<!-- Content -->
-        <fieldset>
-			<legend>Account Information:</legend>
-			<div class= "collapse" id = "collapseExample">
-			<label> First name:<input type="text" name="fname"   autofocus>
-			</label><br>
+	        <fieldset>
 
-		  	<label for="lname"> Last name:</label><input type="text" name="lname"><br>
+				<legend>Account Information:</legend>
+				<label> First name:<input type="text" name="fname"   autofocus>
+				</label><br>
 
-		  	<label> Email: <input type="email" name="email"   placeholder = "iyad@umich.edu"></label><br>
+			  	<label for="lname"> Last name:</label><input type="text" name="lname"><br>
 
-		  	<label> Password: <input type="password"   name="password1"></label><br>
+			  	<label> Email: <input type="email" name="email"   placeholder = "sarah@umich.edu"></label><br>
 
-		  	<label> Confirm Password: *<input type="password"   name="password2" onchange="validatePass(this)"></label><br>
-		</fieldset><br>
+			  	<label> Password: <input type="password"   name="password1"></label><br>
 
+			  	<label> Confirm Password: *<input type="password"   name="password2" onchange="validatePass(this)"></label><br>
+			</fieldset><br>
+		</div>
+	</div>
 		<fieldset>
 			<legend>Contact Information:</legend>
 			<label>Phone number: <input type="text"></label><br><br>
