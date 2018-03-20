@@ -40,13 +40,24 @@
 	</div>
 		<fieldset>
 			<legend>Contact Information:</legend>
-			<label>Phone number: <input type="text"></label><br><br>
+			<label>Phone number: <input type="text" class="input-medium bfh-phone" id="phoneNumber"  placeholder="(xxx) xxx-xxxx" data-format="(ddd) ddd-dddd" onblur="clearPhone()"></label><br><br>
+
+			<script>
+    	function clearPhone(){
+    		var phoneField = document.getElementById('phoneNumber');
+    		if (phoneField.value == "(" || phoneField.value == "( ") {
+    			phoneField.value = "";
+    			console.log("Cleared")
+    		}
+    	}
+    	
+    </script>
 
 		<label>Country of Citizenship: <select id="country" class="bfh-countries" data-country="US"></select><br></label><br>
 
 		<label> Address: <input type="text" id="address" name="address" size="50" placeholder = "1234 N Wells St"></label><br>
 		<label> City: <input type="text" name="city"  placeholder = "Ann Arbor"></label>
-		<label> State: <input type="text" name="state"  placeholder = "MI"></label>
+		<label> State: <select class="input-medium bfh-states" data-country="US"  data-state = "MI"></select></label>
 		<label> Zip code: <input type="text" name="Zip code"  placeholder = "48108"></label><br>  
 		</fieldset><br>
       </div>
@@ -158,8 +169,17 @@
 
 			Expected Start Date: <input type="date" name="startdate"><br>
 			
-			Expected Salary: $<input type="range" name="salary" min="40" max="200" step="5" value="100" onchange="updateSalary(this)"><br/><span id="salary"></span>
-			<br>
+			Expected Salary: $<input id="myRange"type="range" name="salary" min="40" max="200" step="5" value="100" onchange="updateSalary(this)"> Value: <span id="salary"></span>
+
+			<script>
+				var slider = document.getElementById("myRange");
+					var output = document.getElementById("salary");
+					output.innerHTML = slider.value;
+
+					slider.oninput = function() {
+				  output.innerHTML = this.value;
+			</script>
+
 
 			<label>Personal Website/Portfolio: <input type="url" name="website" placeholder="www.mywebsite.com"></label><br>
 			
