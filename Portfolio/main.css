@@ -19,7 +19,7 @@ html, body, header, footer{
 }
 .top-nav ul li a{
 	font-size: 1em;
-	color: #DDDDDA; /*CHANGE*/
+	color: green; /*CHANGE*/
 	text-decoration: none;
 	padding: .5em 1em;
 	display: block;
