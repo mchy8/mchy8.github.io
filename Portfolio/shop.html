@@ -1,59 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-	<meta charset="UTF-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-		<link href="http://icons.iconarchive.com/icons/shiftercat/rose/256/Rose-Cerise-icon.png" type="image/png" rel="icon">
-		<link rel="stylesheet" type="text/css" href="css/main.css">
-	<title>Shop</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link href="http://icons.iconarchive.com/icons/shiftercat/rose/256/Rose-Cerise-icon.png" type="image/png" rel="icon">
+  <link rel="stylesheet" type="text/css" href="css/main.css">
+  <link rel="stylesheet" type="text/css" href="css/shop.css">
+  <title>Shop</title>
 
 </head>
+
 <body>
-		<a href="#main-content" class="skip">navigation</a> 
-		<header>
-			<nav id = "top-nav" class="top-nav">
-				<ul>
-		            <li><a href="index.html">HOME</a></li>
-		            <li><a class="current-page" href="shop.html">Shop</a></li>
-		            <li><a href="local.html">Local</a></li>
-		            <li><a href="contact.html">Contact Us</a></li>
-	        	</ul> 
-			</nav>
-		</header>
+  <header>
+    <nav id="top-nav" class="top-nav">
+      <a class="link" href="index.html"><h2 class="nav-title">Succulent store</h2></a>
+      <div class="nav-links">
+        <a class="nav-link" href="index.html">Home</a>
+        <a class="nav-link" href="shop.html">Shop</a>
+        <a class="nav-link" href="local.html">Local</a>
+        <a class="nav-link current-page" href="contact.html">Contact Us</a>
+      </div>
+    </nav>
+  </header>
 
-    <!--<input id="search">-->
-    <button onclick="search()">Click Here!</button>
-    <span id="searchLabel"></span>
-    <div id="results">
+  <!--<input id="search">-->
+  <div class="content">
+    <button class="update" onclick="search()">Update</button>
+    <span id="searchLabel" class="searchLabel"></span>
+    <div id="results" class="results">
     </div>
-    
-    <script>
-    var url = "https://completion.amazon.com/search/complete?method=completion&q=succulents&search-alias=lawngarden&client=amazon-search-ui&mkt=1&x=update";
-var completion = [];
+  </div>
 
-function search(){
-  var s = document.getElementById("searchScript");
-  s.parentNode.removeChild(s);
-  s = document.createElement("script");
-  s.src = url;
-  s.id="searchScript";
-  document.body.appendChild(s);
-}
-function update(){
-  var results = completion[1];
-  var query = completion[0];
-  document.getElementById("searchLabel").innerText = "Search for succulents yielded " + results.length +" results.";
-  var r = document.getElementById("results");
-  r.innerHTML = "";
-  for(var i in results){
-    var a = document.createElement("a");
-    a.innerText = results[i];
-    a.href = "https://www.amazon.com/s?url=search-alias%3Dlawngarden&field-keywords=" + results[i].replace(" ", "+");
-    a.target = "_blank";
-    r.appendChild(a);
-    r.appendChild(document.createElement("br"));
-  }
-} </script>
-    <script id="searchScript" src=""></script>
-  </body>
+
+  <script id="searchScript" src=""></script>
+  <script>
+    var url = "https://completion.amazon.com/search/complete?method=completion&q=succulents&search-alias=lawngarden&client=amazon-search-ui&mkt=1&x=update";
+    var completion = [];
+
+    function search() {
+      var s = document.getElementById("searchScript");
+      s.parentNode.removeChild(s);
+      s = document.createElement("script");
+      s.src = url;
+      s.id = "searchScript";
+      document.body.appendChild(s);
+    }
+
+    function update() {
+      var results = completion[1];
+      var query = completion[0];
+      document.getElementById("searchLabel").innerText = "Search for succulents yielded " + results.length + " results.";
+      var r = document.getElementById("results");
+      r.innerHTML = "";
+      for (var i in results) {
+        var a = document.createElement("a");
+        a.innerText = results[i];
+        a.className="result"
+        a.href = "https://www.amazon.com/s?url=search-alias%3Dlawngarden&field-keywords=" + results[i].replace(" ", "+");
+        a.target = "_blank";
+        r.appendChild(a);
+        r.appendChild(document.createElement("br"));
+      }
+    }
+    search();
+  </script>
+</body>
+
 </html>
