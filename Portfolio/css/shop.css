@@ -1,0 +1,45 @@
+.update{
+  padding: .5em;
+  outline: none;
+  border: 1px solid #a9a9a9;
+  background-color: #f4f4f4;
+  display: inline-block;
+}
+.update:active{
+  padding: .5em;
+  outline: none;
+  border: 1px solid #a9a9a9;
+  background-color: #e0e0e0;
+  display: inline-block;
+}
+.results{
+  padding: 1em;
+}
+.result {
+  display: block;
+  color: grey;
+  font-family: helvetica;
+  text-decoration: none;
+  text-transform: uppercase;
+  /* margin: .25em; */
+  padding: 1em;
+  background-color: #ffffff;
+}
+
+.result:hover {
+  text-decoration: underline;
+}
+
+.result:active {
+  color: black;
+}
+
+.result:visited {
+  color: purple;
+}
+.content{
+  margin: auto;
+  width: 60%;
+}
+.article{
+}

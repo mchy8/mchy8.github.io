@@ -4,12 +4,39 @@
   font-family: "Nanum Gothic Coding", monospace;
 }
 */
-body {
+/* body {
   background-color: rgba(52,63,82,0.7);
   color: white;
+} */
+.content{
+  margin: auto;
+  width: 50%;
 }
-
-legend, h2, h4 {
-  font-weight: bold;
-
+.contact-title{
+  font-family: sans-serif;
+  color: #707070;
+  text-align: center;
+}
+.contact-section{
+  color: #808080;
+}
+.contact-form{
+  padding: 1em;
+  background-color: white;
+}
+.contact-info{
+  padding: .5em;
+  width: 45%;
+  outline: none;
+}
+.contact-textarea{
+  padding: .5em;
+  width: 93%;
+  outline: none;
+}
+.submit{
+  padding:1em;
+  background-color: white;
+  outline: none;
+  border: 1px solid #a9a9a9;
 }
