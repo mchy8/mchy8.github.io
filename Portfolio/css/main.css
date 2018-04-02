@@ -78,4 +78,9 @@ body{
 .footer-link:active {
   color: black;
 }
-
+body{
+  background-image: url("../Images/succ.jpg");
+  background-repeat: repeat;
+  background-attachment: fixed;
+  /*background-size: 100%;*/
+}
