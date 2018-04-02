@@ -1,9 +1,40 @@
 
+@media only screen and (min-width: 800px){
+
 body{
+  background-image: url("../Images/succ.jpg");
+  background-repeat: repeat;
+  background-attachment: fixed;
 	margin: 0px;
   background-color: #f4f4f4;
+  /*background-size: 100%;*/
 }
 
+.page-header{
+  /*background: #3e5151; 
+  background: -webkit-linear-gradient(to right, #3e5151, #decba4);
+  background: linear-gradient(to right, #3e5151, #decba4);*/
+  background-image: url("../Images/succulent logo.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  /*background-height: 100%;*/
+  /*background-attachment: fixed;*/
+  padding-top: 20%;
+  padding-bottom: 20%;
+  padding-left: 5%;
+}
+
+.header-title{
+	color: #101010;
+	font-family: helvetica;
+	font-weight: 100;
+}
+
+.header-caption{
+	color: #101010;
+	font-family: helvetica;
+	font-weight: 100;
+}
 .content{
   padding: 2em;
 	font-family: sans-serif;
@@ -18,15 +49,19 @@ body{
 .nav-title {
 	display: inline;
 	color: white;
-	/* margin-left: 1em; */
 	font-family: sans-serif;
 	font-weight: normal;
 	text-decoration: none;
+}
+.nav-logo{
+    min-width: auto;
+    max-height: 100%;
 }
 .nav-links {
 	display: inline;
 	margin-left: 1em;
 	float: right;
+	margin-top: 1em; 
 }
 .nav-link {
 	color: white;
@@ -49,8 +84,8 @@ body{
 
 .footer{
 	background-color: #000000;
-	padding-left: 15%;
-	padding-right: 15%;
+	padding-left: 5%;
+	padding-right: 5%;
 }
 
 .footer-content{
@@ -78,9 +113,9 @@ body{
 .footer-link:active {
   color: black;
 }
-body{
+/*body{
   background-image: url("../Images/succ.jpg");
   background-repeat: repeat;
   background-attachment: fixed;
-  /*background-size: 100%;*/
+}*/
 }
