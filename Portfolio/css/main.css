@@ -40,3 +40,42 @@ body{
 	color: inherit;
 	text-decoration: inherit;
 }
+.current-page{
+	border-radius: 5px;
+	background-color: orange;
+	color: blue;
+	font-weight: bolder;
+}
+
+.footer{
+	background-color: #000000;
+	padding-left: 15%;
+	padding-right: 15%;
+}
+
+.footer-content{
+	width: 100%;
+	font-family: helvetica;
+	color:white;
+}
+.footer-column{
+	width:33%;
+	/* padding-left:2em; */
+	text-align: center;
+}
+.footer-link {
+  color: grey;
+	font-weight: bold;
+  font-family: helvetica;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.footer-link:hover {
+  text-decoration: underline;
+}
+
+.footer-link:active {
+  color: black;
+}
+
