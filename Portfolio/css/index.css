@@ -7,6 +7,22 @@
   padding-top: .25em;
   background-color: #ffffff;
 }
+.images-container{
+ /* display: inline-block;*/
+  margin: auto;
+  width: 93%;/*
+  for the smaller part do 70%*/
+
+}
+.groups{
+  margin: auto;
+  width: 93%;
+}
+
+.video{
+    margin: auto;
+  width: 87%;
+}
 .content-title{
   text-align: center;
   font-weight: lighter;
