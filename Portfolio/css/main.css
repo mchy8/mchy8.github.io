@@ -1,24 +1,16 @@
 
-@media only screen and (min-width: 800px){
-
 body{
   background-image: url("../Images/succ.jpg");
   background-repeat: repeat;
   background-attachment: fixed;
 	margin: 0px;
   background-color: #f4f4f4;
-  /*background-size: 100%;*/
 }
 
 .page-header{
-  /*background: #3e5151; 
-  background: -webkit-linear-gradient(to right, #3e5151, #decba4);
-  background: linear-gradient(to right, #3e5151, #decba4);*/
   background-image: url("../Images/succulent logo.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  /*background-height: 100%;*/
-  /*background-attachment: fixed;*/
   padding-top: 20%;
   padding-bottom: 20%;
   padding-left: 5%;
@@ -75,6 +67,10 @@ body{
 	color: inherit;
 	text-decoration: inherit;
 }
+
+@media only screen and (min-width: 800px){
+
+
 .current-page{
 	border-radius: 5px;
 	background-color: orange;
@@ -95,7 +91,6 @@ body{
 }
 .footer-column{
 	width:33%;
-	/* padding-left:2em; */
 	text-align: center;
 }
 .footer-link {
@@ -112,10 +107,4 @@ body{
 
 .footer-link:active {
   color: black;
-}
-/*body{
-  background-image: url("../Images/succ.jpg");
-  background-repeat: repeat;
-  background-attachment: fixed;
-}*/
 }
