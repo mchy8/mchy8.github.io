@@ -96,6 +96,7 @@ body {
   display: none;
 }
 @media only screen and (min-width: 800px) {
+  /*normal view*/
   .page-header {
     background-image: url("../Images/succulent logo.jpg");
     background-repeat: no-repeat;
@@ -151,6 +152,7 @@ body {
   }
 }
 @media only screen and (max-width: 800px){
+  /*ipads and phones*/
   .header-title {
     color: #101010;
     font-family: helvetica;
@@ -212,6 +214,7 @@ body {
   }
 }
 @media only screen and (max-width: 400px) {
+  /*when the footer has to shrink*/
   .footer-content {
     /* width:95%; */
     flex-direction: column;
@@ -222,22 +225,5 @@ body {
   .footer-bottom {
     /* width:95%; */
     flex-direction: column;
-  }
-}
-@media only print {
-  .top-nav{
-    display:none;
-  }
-  .page-header{
-    display:none;
-  }
-  .footer{
-    display:none;
-  }
-  .videoWrapper{
-    display: none;
-  }
-  .print-help-url{
-    display: block;
   }
 }
