@@ -12,81 +12,104 @@
 </head>
 
 <body>
-
-	<header>
+	<!--NOTE: Rubric said that every page needs a header-->
+	<header class="header">
 		<nav id="top-nav" class="top-nav">
-			<a class="link" href="index.html"><img src= "Images/logo.png" class= "nav-logo"></a>
+			<a class="link" href="index.html"><img alt="Succulent Store" src= "Images/logo.png" class= "nav-logo"></a>
 			<div class="nav-links">
-				<a class="nav-link" href="index.html">Home</a>
+				<a class="nav-link current-page" href="index.html">Home</a>
 				<a class="nav-link" href="shop.html">Shop</a>
 				<a class="nav-link" href="local.html">Local</a>
-				<a class="nav-link current-page" href="contact.html">Contact Us</a>
+				<a class="nav-link" href="contact.html">Contact Us</a>
 			</div>
 		</nav>
+		<div class="page-header">
+			<h1 class="header-title">Mackenzie's <br> Succulents</h1>
+			<p class="header-caption">Here be succulents</p>
+		</div>
 	</header>
-
 	<div class="content">
 		<form class="contact-form" name="contact form" action="contact.html" method="get">
 			<h2 id="title" class="contact-title"> Tell Us a Little More About Yourself </h2>
-			<div class="collapse" id="collapseExample">
-				<div class="card card-body">
-					<!-- Content -->
-					<h3 class="contact-section">Basic Information</h3>
-					<input type="text" name="fname" class="contact-info" placeholder="First name" autofocus>
-					<input type="text" name="lname" class="contact-info" placeholder="Last name"><br>
+			<div>
+				<h3 class="contact-section">Basic Information</h3>
+				<input type="text" name="fname" class="contact-info" placeholder="First name" autofocus>
+				<input type="text" name="lname" class="contact-info" placeholder="Last name"><br>
 
-					<h3 class="contact-section">Contact Information</h3>
-					<input type="tel"   name="phoneNumber" class="input-medium bfh-phone contact-info" placeholder="Phone number (xxx) xxx-xxxx" data-format="(ddd) ddd-dddd" onblur="clearPhone()">
-					<input type="email" name="email"       class="contact-info" placeholder="Email ex: sarah@plantlover.com"><br>
+				<h3 class="contact-section">Contact Information</h3>
+				<input type="tel" name="phoneNumber" class="input-medium bfh-phone contact-info" placeholder="Phone number (xxx) xxx-xxxx" data-format="(ddd) ddd-dddd" onblur="clearPhone()">
+				<input type="email" name="email" class="contact-info" placeholder="Email ex: sarah@plantlover.com"><br>
 
-					<h3 class="contact-section">What's on your mind?</h3>
-					<textarea class="contact-textarea" placeholder="Thoughts?" name="thoughts" rows="8" cols="80"></textarea>
-					<br>
-					<br>
-					<input class="submit" type="submit">
-				</div>
+				<h3 class="contact-section">What's on your mind?</h3>
+				<textarea class="contact-textarea" placeholder="Thoughts?" name="thoughts" rows="8" cols="80"></textarea>
+				<br>
+				<br>
+				<input class="submit" type="submit">
+				<h2 class="contact-title">Or</h2>
+				<h3 class="contact-section">Contact us</h3>
+				<p class="contact-company-info">Email: <a href="mailto:example@mysite.com" class="link contact-link">example@mysite.com</a></p>
+				<br>
+				<p class="contact-company-info">Phone Number: <a href="tel:1234567890" class="link contact-link">(123) 456-7890 </a></p>
 			</div>
 		</form>
 	</div>
 	<footer class="footer">
-			<table class="footer-content">
-				<tr class="footer-row">
-					<td rowspan="4" class="footer-column">
-						<p>This site was created for the amazing and highly rated portfolio of Mackenzie 2018</p>
-					</td>
-					<td class="footer-column">
-					</td>
-					<td class="footer-column">
-						<a href="index.html" class="footer-link">Home</a>
-					</td>
-					<td rowspan="4" class="footer-column">
-						<h1>Succelent Store</h1>
-					</td>
-				</tr>
-				<tr class="footer-row">
-					<td  class="footer-column">
-						<a href="mchy8.github.io" class="footer-link">github.io</a>
-					</td>
-					<td class="footer-column">
-						<a href="shop.html" class="footer-link">Store</a>
-					</td>
-				</tr>
-				<tr class="footer-row">
-					<td rowspan="3">
-
-					</td>
-					<td class="footer-column">
-						<a href="local.html" class="footer-link">Local</a>
-					</td>
-				</tr>
-				<tr class="footer-row">
-					<td class="footer-column">
-						<a href="contact.html" class="footer-link">Contact</a>
-					</td>
-				</tr>
+		<div class="footer-content">
+			<br>
+			<div class="footer-col">
+				<div class="footer-row">
+					<a href="index.html" class="footer-link">Home</a>
+				</div>
+				<div class="footer-row">
+					<a href="shop.html" class="footer-link">Store</a>
+				</div>
+				<div class="footer-row">
+					<a href="local.html" class="footer-link">Local</a>
+				</div>
+				<div class="footer-row">
+					<a href="contact.html" class="footer-link">Contact</a>
+				</div>
+			</div>
+			<br>
+			<div class="footer-col">
+				<div class="footer-row">
+					<a href="https://mchy8.github.io" class="footer-link">Site</a>
+				</div>
+				<div class="footer-row">
+					<a href="https://github.com/mchy8/" class="footer-link">Github</a>
+				</div>
+				<div class="footer-row">
+					<a href="https://github.com/mchy8/mchy8.github.io/tree/master/Portfolio" class="footer-link">Source</a>
+				</div>
+			</div>
+			<br>
+			<div class="footer-col  footer-title">
+				<div class="footer-row">
+					<a class="link" href="index.html">
+						 <h1>Succulent Store</h1>
+					</a>
+				</div>
+			</div>
+		</div>
+		<div class="footer-bottom">
+			<div class="footer-col wide-col">
+					<div class="footer-row">
+						<span class="footer-year">2018</span>
+						<a href="index.html" class="footer-link footer-site">Succulent store</a>
+				</div>
 				<br>
-			</table>
-		</footer>
+				<div class="footer-row">
+					This site was created for the amazing and highly rated portfolio of <a href="https://github.com/mchy8/" class="footer-link">Mackenzie</a>
+				</div>
+			</div>
+			<br>
+			<div class="footer-col">
+				<div class="footer-row">
+					<a href="#" class="footer-link">Back to top</a>
+				</div>
+			</div>
+		</div>
+	</footer>
 </body>
 
 </html>

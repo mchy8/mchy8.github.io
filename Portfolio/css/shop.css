@@ -1,20 +1,23 @@
-.update{
+.update {
   padding: .5em;
   outline: none;
   border: 1px solid #a9a9a9;
   background-color: #f4f4f4;
   display: inline-block;
 }
-.update:active{
+
+.update:active {
   padding: .5em;
   outline: none;
   border: 1px solid #a9a9a9;
   background-color: #e0e0e0;
   display: inline-block;
 }
-.results{
+
+.results {
   padding: 1em;
 }
+
 .result {
   display: block;
   color: grey;
@@ -37,9 +40,14 @@
 .result:visited {
   color: purple;
 }
-.content{
+
+.content {
   margin: auto;
   width: 60%;
+  word-wrap: break-word;
 }
-.article{
+
+.article {
+  padding: 1em;
+  background-color: #ffffff;
 }

@@ -17,7 +17,6 @@
   margin: auto;
   width: 93%;
 }
-
 .video{
     margin: auto;
   width: 87%;
@@ -28,7 +27,6 @@
   font-family: "Courier New";
   font-size: 2.5em;
 }
-
 .content-section{
   padding-left: 1em;
   text-align: center;
@@ -36,7 +34,6 @@
   font-family: "Courier New";
 
 }
-
 hr {
   border: 0;
   height: 0;
@@ -44,11 +41,15 @@ hr {
   border-bottom: 1px solid rgba(255, 255, 255, 0.3);
 }
 
-@media only screen and (min-width: 350px){
+@media only screen and (max-width: 800px){
   .content-title{
-    font-size: 1em;
+    font-size: 3vw;
   }
   .content-section{
-    font-size: 1em;
+    font-size: 3vw;
+  }
+  .content-text{
+    font-size: 3vw;
+    word-wrap: break-word;
   }
 }

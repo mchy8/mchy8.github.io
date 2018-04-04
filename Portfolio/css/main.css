@@ -1,193 +1,243 @@
-body{
+body {
   background-image: url("../Images/succ.jpg");
   background-repeat: repeat;
   background-attachment: fixed;
-	margin: 0px;
+  margin: 0px;
   background-color: #f4f4f4;
 }
-
 .link {
-	color: inherit;
-	text-decoration: inherit;
+  color: inherit;
+  text-decoration: inherit;
 }
-.current-page{
-	border-radius: 5px;
-	background-color: orange;
-	color: blue;
-	font-weight: bolder;
+.current-page {
+  border-radius: 5px;
+  background-color: orange;
+  color: blue;
+  font-weight: bolder;
 }
-.footer{
-	background-color: #000000;
-	padding-left: 5%;
-	padding-right: 5%;
+.footer {
+  background-color: #000000;
+  width:100%;
 }
-
-.footer-content{
-	width: 100%;
-	font-family: helvetica;
-	color:white;
+.footer-content {
+  padding: 1.5em;
+  font-family: helvetica;
+  color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  /* text-align: center; */
+  font-weight: 100;
+  padding-left: 25%;
+  padding-right: 25%;
 }
-.footer-column{
-	width:33%;
-	text-align: center;
+.footer-bottom{
+  color:white;
+  background-color: #202020;
+  /* width:100%; */
+  /* text-align: center; */
+  padding: 2em;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  font-size: 1.25em;
+  padding-left: 25%;
+  padding-right: 25%;
+  word-wrap: break-word;
+}
+.footer-col {
+  width: 33%;
 }
 .footer-link {
   color: gray;
-	font-weight: bold;
+  /* font-weight: bold; */
   font-family: helvetica;
   text-decoration: none;
-  text-transform: uppercase;
+  /* text-transform: uppercase; */
 }
-.footer-link:hover{
-	text-decoration: underline;
+.footer-link:hover {
+  text-decoration: underline;
 }
-
 .footer-link:active {
   color: black;
 }
+.footer-year{
+  color: gray;
+}
+.footer-site{
+  color: white;
+  font-family: serif;
+  font-size: 1em;
+}
+.wide-col{
+  width: 50%;
+}
 .videoWrapper {
-	position: relative;
-	padding-bottom: 56.25%; /* 16:9 */
-	padding-top: 25px;
-	height: 0;
+  position: relative;
+  padding-bottom: 56.25%;
+  /* 16:9 */
+  padding-top: 25px;
+  height: 0;
 }
 .videoWrapper iframe {
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
-.content-image{
-	width:300px;
+.content-image {
+  width: 300px;
 }
-.header-title{
-	word-wrap: break-word;
+.header-title {
+  word-wrap: break-word;
 }
-@media only screen and (min-width: 800px){
-	.page-header{
-	  background-image: url("../Images/succulent logo.jpg");
-	  background-repeat: no-repeat;
-	  background-size: cover;
-	  padding-top: 15%;
-	  padding-bottom: 15%;
-	  padding-left: 5%;
-	}
-	.header-title{
-		color: #101010;
-		font-family: helvetica;
-		font-weight: 100;
-		font-size: 3em;	}
-	.header-caption{
-		color: #101010;
-		font-family: helvetica;
-		font-weight: 100;
-	}
-	.content{
-	  padding: 2em;
-		font-family: sans-serif;
-	}
-	.top-nav{
-		padding: .75em;
-		background-color: black;
-		width: 100%;
-	  	box-sizing: border-box;
-		margin: 0px;
-	}
-/*	.nav-title {
-		display: inline;
-		color: white;
-		font-family: sans-serif;
-		font-weight: normal;
-		text-decoration: none;
-	}*/
-	.nav-logo{
-	    min-width: auto;
-	    max-height: 100%;
-	}
-	.nav-links {
-		display: inline;
-		margin-left: 1em;
-		float: right;
-		margin-top: 1em; 
-	}
-	.nav-link {
-		color: white;
-		font-size: 1.5em;
-		text-decoration: none;
-		padding-left: .5em;
-		padding-right: .5em;
-		font-family: sans-serif;
-	}
-	.content-image {
-		width:300px;
-	}
+.print-help-url{
+  display: none;
+}
+@media only screen and (min-width: 800px) {
+  .page-header {
+    background-image: url("../Images/succulent logo.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 15%;
+    padding-bottom: 15%;
+    padding-left: 5%;
+  }
+  .header-title {
+    color: #101010;
+    font-family: helvetica;
+    font-weight: 100;
+    font-size: 3em;
+  }
+  .header-caption {
+    color: #101010;
+    font-family: helvetica;
+    font-weight: 100;
+  }
+  .content {
+    padding: 2em;
+    font-family: sans-serif;
+  }
+  .top-nav {
+    padding: .75em;
+    background-color: black;
+    width: 100%;
+    box-sizing: border-box;
+    margin: 0px;
+  }
+  .nav-logo {
+    max-height: 100%;
+  }
+  .footer-logo{
+      max-height: 100%;
+  }
+  .nav-links {
+    display: inline;
+    margin-left: 1em;
+    float: right;
+    margin-top: 1em;
+  }
+  .nav-link {
+    color: white;
+    font-size: 1.5em;
+    text-decoration: none;
+    padding-left: .5em;
+    padding-right: .5em;
+    font-family: sans-serif;
+  }
+  .content-image {
+    width: 300px;
+  }
 }
 @media only screen and (max-width: 800px){
-
-	/*.page-header{
-	background: #cedce7; 
-	background: -moz-linear-gradient(top,  #cedce7 0%, #596a72 100%);  FF3.6-15 
-	background: -webkit-linear-gradient(top,  #cedce7 0%,#596a72 100%);
-	background: linear-gradient(to bottom,  #cedce7 0%,#596a72 100%); 
-
-	  padding-top: 15%;
-	  padding-bottom: 15%;
-	  padding-left: 5%;
-	}*/
-	.header-title{
-		color: white;
-		font-family: helvetica;
-		font-weight: 100;
-		/*display: none;*/
-	}
-	.header-caption{
-		color: white;
-		font-family: helvetica;
-		/*display: none;*/
-	}
-	.content{
-	  padding: 2em;
-		font-family: sans-serif;
-	}
-	.top-nav{
-		padding: .75em;
-		background-color: black;
-		width: 100%;
-	  	box-sizing: border-box;
-		margin: 0px;
-	}
-	.content-image{
-		width: 90%;
-	}
-/*	.nav-title {
-		display: block;
-		color: white;
-		font-family: sans-serif;
-		font-weight: normal;
-		text-decoration: none;*/
-	}
-	.nav-logo{
-	    min-width: auto;
-	    max-height: 100%;
-		float: center;
-	}
-	.nav-links {
-		display: block;
-		width:100%;
-	}
-	.nav-link {
-		border-top: 1px solid red;
-		display: block;
-		width: 100%;
-		color: white;
-		font-size: 1.5em;
-		text-decoration: none;
-		padding: .5em;
-		font-family: sans-serif;
-	}
-
-	.footer-title{
-		display: none;
-	}
+  .header-title {
+    color: #101010;
+    font-family: helvetica;
+    font-weight: 100;
+    font-size: 1.5em;
+    font-size: 6vw;
+  }
+  .header-caption {
+    color: #101010;
+    font-family: helvetica;
+    font-weight: 100;
+    font-size: 3vw;
+  }
+  .page-header {
+    background-position: right;
+    background-image: url("../Images/succulent logo.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 15%;
+    padding-bottom: 15%;
+    padding-left: 5%;
+    width:95%;
+  }
+  .content {
+    padding: 2em;
+    font-family: sans-serif;
+  }
+  .content-image {
+    width: 90%;
+  }
+  .top-nav {
+    padding: .75em;
+    background-color: black;
+    width: 100%;
+    box-sizing: border-box;
+    margin: 0px;
+  }
+  .nav-logo {
+    max-height: 20vw;
+    /* float: center; */
+  }
+  .footer-logo {
+    max-height: 20vw;
+    /* float: center; */
+  }
+  .nav-links {
+    display: block;
+    /* width: 100%; */
+  }
+  .nav-link {
+    border-top: 1px solid red;
+    display: block;
+    width: 95%;
+    color: white;
+    font-size: 1.5em;
+    text-decoration: none;
+    padding: .5em;
+    font-family: sans-serif;
+  }
+}
+@media only screen and (max-width: 400px) {
+  .footer-content {
+    /* width:95%; */
+    flex-direction: column;
+  }
+  .footer-col {
+    width: 100%;
+  }
+  .footer-bottom {
+    /* width:95%; */
+    flex-direction: column;
+  }
+}
+@media only print {
+  .top-nav{
+    display:none;
+  }
+  .page-header{
+    display:none;
+  }
+  .footer{
+    display:none;
+  }
+  .videoWrapper{
+    display: none;
+  }
+  .print-help-url{
+    display: block;
+  }
 }
