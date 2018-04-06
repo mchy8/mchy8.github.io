@@ -95,6 +95,15 @@ body {
 .print-help-url{
   display: none;
 }
+:focus{
+  outline-color: orange;
+  outline-width: thick;
+}
+a:focus{
+  color: white;
+  font-weight: bold;
+}
+
 @media only screen and (min-width: 800px) {
   /*normal view*/
   .page-header {

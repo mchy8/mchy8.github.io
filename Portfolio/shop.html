@@ -29,6 +29,7 @@
 	</header>
   <div class="content">
     <div class="article">
+      <p>When considering buying a succulent, you can’t only focus on the plant itself. Items like pots and pebbles are required to keep your succulent happy and healthy. Since we know it can be difficult to find what you really need for your plant-child, we brought the store to you! Utilizing complex Amazon APIs, we found the top 10 most important shopping results for you and your succulent. By clicking the refresh button, the results will automatically be the most up to date shopping results on Amazon. Happy shopping!</p>
       <button class="update" onclick="search()">Update</button>
       <span id="searchLabel" class="searchLabel"></span>
     </div>
@@ -89,6 +90,10 @@
 				<div class="footer-row">
 					<a href="#" class="footer-link">Back to top</a>
 				</div>
+				<br>
+				<div class="footer-row">
+					<div id="google_translate_element"></div>
+				</div>
 			</div>
 		</div>
 	</footer>
@@ -123,7 +128,12 @@
       }
     }
     search();
-  </script>
+		function googleTranslateElementInit() {
+		  new google.translate.TranslateElement({pageLanguage: 'en', layout: google.translate.TranslateElement.InlineLayout.SIMPLE}, 'google_translate_element');
+			styleElement();
+		}
+	</script>
+	<script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 </body>
 
 </html>

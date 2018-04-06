@@ -24,6 +24,10 @@
   border: 1px solid #909090;
   /* background-color: #F0F0F0; */
 }
+.contact-desc{
+  color: #808080;
+  text-align: center;
+}
 .contact-textarea{
   padding: .5em;
   width: 93%;
