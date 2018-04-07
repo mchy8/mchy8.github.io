@@ -12,7 +12,7 @@ body {
 .current-page {
   border-radius: 5px;
   background-color: orange;
-  color: blue;
+  color: black;
   font-weight: bolder;
 }
 .footer {
@@ -49,7 +49,7 @@ body {
   width: 33%;
 }
 .footer-link {
-  color: gray;
+  color: orange;
   /* font-weight: bold; */
   font-family: helvetica;
   text-decoration: none;
@@ -62,11 +62,11 @@ body {
   color: black;
 }
 .footer-year{
-  color: gray;
+  color: white;
 }
 .footer-site{
-  color: white;
-  font-family: serif;
+  color: orange;
+  font-family: helvetica;
   font-size: 1em;
 }
 .wide-col{
