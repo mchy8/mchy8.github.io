@@ -14,9 +14,9 @@ body {
 }
 .current-page {
   border-radius: 5px;
-  background-color: yellow;
-    color: black;
-  -webkit-text-fill-color: black; 
+  background-color: white;
+    color: #0000ff;
+  -webkit-text-fill-color: #0000ff; 
 /*  -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: black;*/
   font-weight: bolder;
