@@ -14,7 +14,7 @@ body {
 }
 .current-page {
   border-radius: 5px;
-  background-color: orange;
+  background-color: yellow;
     color: black;
   -webkit-text-fill-color: black; 
 /*  -webkit-text-stroke-width: 1px;
@@ -55,7 +55,7 @@ body {
   width: 33%;
 }
 .footer-link {
-  color: orange;
+  color: yellow;
   /* font-weight: bold; */
   font-family: helvetica;
   text-decoration: none;
@@ -71,7 +71,7 @@ body {
   color: white;
 }
 .footer-site{
-  color: orange;
+  color: yellow;
   font-family: helvetica;
   font-size: 1em;
 }
@@ -102,7 +102,7 @@ body {
   display: none;
 }
 :focus{
-  outline-color: orange;
+  outline-color: yellow;
   outline-width: thick;
   color: black;
 }
