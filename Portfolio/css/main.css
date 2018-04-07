@@ -17,8 +17,8 @@ body {
   background-color: orange;
     color: black;
   -webkit-text-fill-color: black; 
-  -webkit-text-stroke-width: 1px;
-  -webkit-text-stroke-color: black;
+/*  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black;*/
   font-weight: bolder;
 }
 .footer {
