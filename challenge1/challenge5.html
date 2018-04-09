@@ -93,7 +93,7 @@ for(var i = 0; i < sourceImages.length; i++ ) {
 			var src = this.getAttribute("src")
 			// img.src = src
 			// mainImage.appendChild(img);
-			mainImage.style.background = "url(" + src +")"
+			mainImage.style.backgroundImage = "url(" + src +")"
 			mainImage.innerHTML = altText
 
 
@@ -103,7 +103,7 @@ for(var i = 0; i < sourceImages.length; i++ ) {
 		elem.onmouseleave= function(){
 			mainImage.innerText = ("Hover over an image below.")
 			console.log("mouse left!")
-			mainImage.style.background = "#8e68ff"
+			mainImage.style.backgroundImage = "none"
 			mainImage.innerHTML = "Hover over an image below."
 
 			//step 1: set the text in the main image to the default value
