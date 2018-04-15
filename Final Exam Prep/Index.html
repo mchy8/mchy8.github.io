@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+</head>
+<body>
+	<header>
+		<h1>Sarah's website!!</h1>
+		<div class="photo-grid">
+<!-- 			<div class="black"> -->
+				<img src="Images/random forest.PNG" alt= "sketch">
+<!-- 			<div class="green"> -->
+				<img class = "green"src="Images/random forest.PNG" alt= "sketch">
+		<p>Hello my name is</p>
+	</header>
+<script type = "text/javascript">
+var mainImage = document.getElementById("image");
+var sourceImages = document.getElementsByTagName("img");
+for(var i = 0; i < sourceImages.length; i++ ) {
+		var elem = sourceImages[i];
+		elem.onmouseenter = function() {
+			console.log("Mouse Entered!")
+			//step 1: getthe alt text from "elem"
+			var altText = this.getAttribute("alt")
+			//creat an image tag with a var 
+			// var img = document.createElement("img");
+			var src = this.getAttribute("src")
+			// img.src = src
+			// mainImage.appendChild(img);
+			mainImage.style.backgroundImage = "url(" + src +")"
+			mainImage.innerHTML = altText
+
+
+			//step 2: set the alt in the 'mainimage'
+		};
+
+		elem.onmouseleave= function(){
+			mainImage.innerText = ("Hover over an image below.")
+			console.log("mouse left!")
+			mainImage.style.backgroundImage = "none"
+			mainImage.innerHTML = "Hover over an image below."
+
+			//step 1: set the text in the main image to the default value
+		};}
+</script>
+	
+</body>
+</html>

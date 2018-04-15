@@ -1,0 +1,60 @@
+body {
+  background-color: red;
+}
+img{
+	border:10px solid black;
+	height: 50%;
+	width: 30%;
+}
+
+/*@media only screen and (min-width: 650px) {
+	.top-nav ul li{ 
+		display: inline-block;
+		width: 18%;
+		
+	}*/
+
+
+@media only screen and (max-width: 650px) {
+	p{color: green;
+		font-family: Times;
+
+	}
+	img{
+	border:10px solid black;
+	height: 30%;
+	width: 30%;
+	display: inline-block;
+
+}
+.img{
+	display: inline;
+}
+/*	.photo-grid div { 
+		height: 300px;
+		margin: 1%;
+		margin-bottom: 30px;
+	}
+	.green, .black{
+		display: inline-block;
+		width: 150%;
+	}
+	.resp-img {width: 100%;}*/	
+
+
+	}
+@media only screen and (min-width: 651px) {
+	body {
+  background-color: green;
+}
+
+		p{color: blue;
+		font-family: Arial;
+
+	}
+	img{
+	border:10px solid black;
+	height: 50%;
+	width: 50%;
+}
+}
