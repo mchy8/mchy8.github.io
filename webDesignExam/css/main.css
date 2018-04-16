@@ -3,17 +3,19 @@ body{
 }
 img{
 	border: 10px solid blue;
-	height: 50%;
+/*	height: 50%;*/
 	width: 50%;
 	padding: 5%;
-	display:inline;
+	display:inline-block;
+	
 
 }
 .otherImage{
 	border: 10px solid blue;
-	height: 50%;
+/*	height: 50%;*/
 	width: 50%;
 	padding: 5%;
-	display:inline;
+	display:inline-block;
+	
 
 }
