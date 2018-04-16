@@ -15,23 +15,25 @@
 <label>
 	<button type="button" id="myBTN" name = "myBTN" onclick= "togglePicture()">Hide Image</button>
 </label>
-	<button type="button">Show Image</button>
+<label>
+	<button type="button" id="again" name= "again" onclick= "redoPicture()">Show Image</button>
+</label>
 
 
 <!-- <p id="demo" onclick="myFunction()">Click me to change my text color.</p> -->
 
-// <script>
+<!-- 
 // function myFunction() {
 //     document.getElementById("demo").style.color = "red";
 // }
-// </script>
-<!-- 	        <div id="check">
-          <label>
-            <input type="checkbox" name="subscribe" id="subscribe" onchange="toggleEmail()">
-            Check to toggle the email field.
-          </label>
-        </div> -->
 
+// <!--  -->	     <!--    <div id="check">
+//           <label>
+//             <input type="checkbox" name="subscribe" id="subscribe" onchange="toggleEmail()">
+//             Check to toggle the email field.
+//           </label>
+//         </div> -->
+ -->
    <script type="text/javascript">
 	function togglePicture(){
     var isClicked = document.getElementById("myBTN");
@@ -40,19 +42,22 @@
     if (isClicked){
     	picture.style.display = "none";
       	console.log("none")
-      // picture.style.display = "block";
-      // console.log("block")
-      //if takes parenthesis- else doesn't take anything
-    }
-
-    else {
-      picture.style.display = "none";
-      console.log("none")
-
     }
 		 
 	} 
     </script>
+    <script type="text/javascript">
+    function redoPicture(){
+    var isAgainClicked= document.getElementById("again");
+    var picture= document.getElementById("subscribe")
+    if (isAgainClicked){
+    	picture.style.display = "block";
+      console.log("block")
+    }
+
+    }
+    </script>
+
 	
 </body>
 </html>
