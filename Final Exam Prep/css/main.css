@@ -13,12 +13,18 @@ img{
 		width: 18%;
 		
 	}*/
+/*#p5{
+
+}*/
 
 
 @media only screen and (max-width: 650px) {
-	p{color: green;
+	#p5{color: purple;
 		font-family: Times;
 
+	}
+	.thurs{
+		color: yellow;
 	}
 	img{
 	border:10px solid black;
@@ -49,7 +55,7 @@ img{
 }
 
 		p{color: blue;
-		font-family: Arial;
+		font-family: Cursive;
 
 	}
 	img{
