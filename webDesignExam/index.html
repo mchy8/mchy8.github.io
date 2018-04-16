@@ -9,10 +9,50 @@
 	<header>
 		<h1>Mackenzie</h1>
 	</header>
-	<img src="images/examPIC.jpg" alt= "Exam Picture of Colleen"><!-- 
+	<img id="subscribe" src="images/examPIC.jpg" alt= "Exam Picture of Colleen"><!-- 
 	 --><img class= "otherImage" src="images/UMSI-logo.jpg" alt= "UMSI logo"><br></br>
-	<button type="button">Hide Image</button>
+<!-- <dive -->
+<label>
+	<button type="button" id="myBTN" name = "myBTN" onclick= "togglePicture()">Hide Image</button>
+</label>
 	<button type="button">Show Image</button>
+
+
+<!-- <p id="demo" onclick="myFunction()">Click me to change my text color.</p> -->
+
+// <script>
+// function myFunction() {
+//     document.getElementById("demo").style.color = "red";
+// }
+// </script>
+<!-- 	        <div id="check">
+          <label>
+            <input type="checkbox" name="subscribe" id="subscribe" onchange="toggleEmail()">
+            Check to toggle the email field.
+          </label>
+        </div> -->
+
+   <script type="text/javascript">
+	function togglePicture(){
+    var isClicked = document.getElementById("myBTN");
+      // console.log(isChecked)
+    var picture= document.getElementById("subscribe")
+    if (isClicked){
+    	picture.style.display = "none";
+      	console.log("none")
+      // picture.style.display = "block";
+      // console.log("block")
+      //if takes parenthesis- else doesn't take anything
+    }
+
+    else {
+      picture.style.display = "none";
+      console.log("none")
+
+    }
+		 
+	} 
+    </script>
 	
 </body>
 </html>
