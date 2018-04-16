@@ -10,7 +10,7 @@
 		<h1>Mackenzie</h1>
 	</header>
 	<img id="subscribe" src="images/examPIC.jpg" alt= "Exam Picture of Colleen"><!-- 
-	 --><img class= "otherImage" src="images/UMSI-logo.jpg" alt= "UMSI logo"><br></br>
+	 --><img class= "otherImage" id="other" src="images/UMSI-logo.jpg" alt= "UMSI logo"><br></br>
 <!-- <dive -->
 <label>
 	<button type="button" id="myBTN" name = "myBTN" onclick= "togglePicture()">Hide Image</button>
@@ -37,11 +37,13 @@
    <script type="text/javascript">
 	function togglePicture(){
     var isClicked = document.getElementById("myBTN");
-      // console.log(isChecked)
-    var picture= document.getElementById("subscribe")
+    var other = document.getElementById("other");
+    var picture= document.getElementById("subscribe");
     if (isClicked){
-    	picture.style.display = "none";
-      	console.log("none")
+    	picture.style.visibility = "hidden";
+      	console.log("none");
+      	// other.style.display = "table";
+
 
     }
 		 
@@ -50,10 +52,10 @@
     <script type="text/javascript">
     function redoPicture(){
     var isAgainClicked= document.getElementById("again");
-    var picture= document.getElementById("subscribe")
+    var picture= document.getElementById("subscribe");
     if (isAgainClicked){
-    	picture.style.display = "inline-block";
-      console.log("inline-block")
+    	picture.style.visibility = "visible";
+      console.log("inline-block");
     }
 
     }
