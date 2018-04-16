@@ -2,18 +2,18 @@ body{
 
 }
 img{
-	border: 10px solid blue;
-/*	height: 50%;*/
-	width: 50%;
+	border: 5px solid blue;
+	height: 50%;
+	width: calc(50%-20%);
 	padding: 5%;
 	display:inline-block;
 	
 
 }
 .otherImage{
-	border: 10px solid blue;
-/*	height: 50%;*/
-	width: 50%;
+	border: 5px solid blue;
+	height: 50%;
+	width: calc(50%-20%);
 	padding: 5%;
 	display:inline-block;
 	
