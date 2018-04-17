@@ -1,0 +1,58 @@
+.content{
+  margin: auto;
+  width: 50%;
+}
+.contact-title{
+  font-family: sans-serif;
+  color: #000000;
+  text-align: center;
+}
+.contact-section{
+  color: ##000000;
+}
+.contact-form{
+  padding: 1em;
+  background-color: white;
+}
+.contact-info{
+  display: inline-block;
+  padding: .5em;
+  width: 40%;
+  margin: .5em;
+  outline: none;
+  /* border: none; */
+  border: 1px solid #000000;
+  /* background-color: #F0F0F0; */
+}
+.contact-desc{
+  color: #000000;
+  text-align: center;
+}
+.contact-textarea{
+  padding: .5em;
+  width: 93%;
+  outline: none;
+  border: 1px solid #000000;
+}
+.contact-company-info{
+  margin: .5em;
+  word-wrap: break-word;
+  color: #000000;
+}
+.contact-link{
+  font-weight: bold;
+}
+.submit{
+  padding:1em;
+  background-color: white;
+  outline: none;
+  border: 1px solid #000000;
+}
+@media only screen and (max-width: 800px){
+  .contact-info{
+    width: 95%;
+  }
+  .content{
+    width: 80vw;
+  }
+}
