@@ -1,0 +1,42 @@
+.content{
+  margin: auto;
+  width: 60%;
+}
+.article{
+  padding: 3em;
+  padding-top: .25em;
+  background-color: #ffffff;
+}
+.content-title{
+  text-align: center;
+  font-weight: lighter;
+  font-family: helvetica;
+  font-size: 2.5em;
+}
+.content-section{
+  padding-left: 1em;
+  text-align: center;
+  font-weight: lighter;
+  font-family: helvetica;
+}
+.img{
+  width:100%;
+  height:auto;
+}
+hr {
+  border: 0;
+  height: 0;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+@media only screen and (max-width: 800px){
+  .content-title{
+    font-size: 4vw;
+  }
+  .content-section{
+    font-size: 4vw;
+  }
+  .article{
+    padding: 1.5em;
+  }
+}

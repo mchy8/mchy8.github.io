@@ -1,0 +1,45 @@
+---
+layout: default title: Mackenzie's Guide to Succulents
+name: shop
+---
+<div class="article">
+  <p>When considering buying a succulent, you can’t only focus on the plant itself. Items like pots and pebbles are required to keep your succulent happy and healthy. Since we know it can be difficult to find what you really need for your plant-child, we
+    brought the store to you! Utilizing complex Amazon APIs, we found the top 10 most important shopping results for you and your succulent. By clicking the refresh button, the results will automatically be the most up to date shopping results on Amazon.
+    Happy shopping!</p>
+  <button class="update" onclick="search()">Update</button>
+  <span id="searchLabel" class="searchLabel"></span>
+</div>
+<div id="results" class="results">
+</div>
+<script id="searchScript"></script>
+<script>
+  var url = "https://completion.amazon.com/search/complete?method=completion&q=succulents&search-alias=lawngarden&client=amazon-search-ui&mkt=1&x=update";
+  var completion = [];
+
+  function search() {
+    var s = document.getElementById("searchScript");
+    s.parentNode.removeChild(s);
+    s = document.createElement("script");
+    s.src = url;
+    s.id = "searchScript";
+    document.body.appendChild(s);
+  }
+
+  function update() {
+    var results = completion[1];
+    var query = completion[0];
+    document.getElementById("searchLabel").innerText = "Search for succulents yielded " + results.length + " results.";
+    var r = document.getElementById("results");
+    r.innerHTML = "";
+    for (var i in results) {
+      var a = document.createElement("a");
+      a.innerText = results[i];
+      a.className = "result"
+      a.href = "https://www.amazon.com/s?url=search-alias%3Dlawngarden&field-keywords=" + results[i].replace(" ", "+");
+      a.target = "_blank";
+      r.appendChild(a);
+      r.appendChild(document.createElement("br"));
+    }
+  }
+  search();
+</script>
