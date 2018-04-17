@@ -11,23 +11,10 @@
 
 </head>
 
-<body>
-	<header class="header">
-		<nav id="top-nav" class="top-nav">
-			<a class="link" href="index.html"><img alt="Succulent Store" src= "Images/logo.PNG" class= "nav-logo"></a>
-			<div class="nav-links">
-				<a class="nav-link" href="index.html">Home</a>
-				<a class="nav-link current-page" href="shop.html">Shop</a>
-				<a class="nav-link" href="local.html">Local</a>
-				<a class="nav-link" href="contact.html">Contact Us</a>
-			</div>
-		</nav>
-		<div class="page-header">
-			<h1 class="header-title">Mackenzie's <br> Succulents</h1>
-			<p class="header-caption">Here be succulents</p>
-		</div>
-	</header>
-  <div class="content">
+---
+layout: default title: Mackenzie's Guide to Succulents
+name: shop
+---
     <div class="article">
       <p>When considering buying a succulent, you can’t only focus on the plant itself. Items like pots and pebbles are required to keep your succulent happy and healthy. Since we know it can be difficult to find what you really need for your plant-child, we brought the store to you! Utilizing complex Amazon APIs, we found the top 10 most important shopping results for you and your succulent. By clicking the refresh button, the results will automatically be the most up to date shopping results on Amazon. Happy shopping!</p>
       <button class="update" onclick="search()">Update</button>
@@ -36,67 +23,7 @@
     <div id="results" class="results">
     </div>
   </div>
-	<footer class="footer">
-		<div class="footer-content">
-			<br>
-			<div class="footer-col">
-				<div class="footer-row">
-					<a href="index.html" class="footer-link">Home</a>
-				</div>
-				<div class="footer-row">
-					<a href="shop.html" class="footer-link">Store</a>
-				</div>
-				<div class="footer-row">
-					<a href="local.html" class="footer-link">Local</a>
-				</div>
-				<div class="footer-row">
-					<a href="contact.html" class="footer-link">Contact</a>
-				</div>
-			</div>
-			<br>
-			<div class="footer-col">
-				<div class="footer-row">
-					<a href="https://mchy8.github.io/Portfolio/index.html" class="footer-link">Site</a>
-				</div>
-				<div class="footer-row">
-					<a href="https://github.com/mchy8/" class="footer-link">Github</a>
-				</div>
-				<div class="footer-row">
-					<a href="https://github.com/mchy8/mchy8.github.io/tree/master/Portfolio" class="footer-link">Source</a>
-				</div>
-			</div>
-			<br>
-			<div class="footer-col  footer-title">
-				<div class="footer-row">
-					<a class="link" href="index.html">
-						 <h1>Succulent Store</h1>
-					</a>
-				</div>
-			</div>
-		</div>
-		<div class="footer-bottom">
-			<div class="footer-col wide-col">
-					<div class="footer-row">
-						<span class="footer-year">2018</span>
-						<a href="index.html" class="footer-link footer-site">Succulent store</a>
-				</div>
-				<br>
-				<div class="footer-row">
-					This site was created for the amazing and well rated portfolio of <a href="https://github.com/mchy8/" class="footer-link">Mackenzie</a>
-				</div>
-			</div>
-			<br>
-			<div class="footer-col">
-				<div class="footer-row">
-					<a href="#" class="footer-link">Back to top</a>
-				</div>
-				<br>
-				<div class="footer-row">
-					<div id="google_translate_element"></div>
-				</div>
-			</div>
-		</div>
-	</footer>
+{% include footer.html %}
   <script id="searchScript"></script>
   <script>
     var url = "https://completion.amazon.com/search/complete?method=completion&q=succulents&search-alias=lawngarden&client=amazon-search-ui&mkt=1&x=update";

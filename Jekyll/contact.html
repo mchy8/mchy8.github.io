@@ -1,34 +1,8 @@
-<!-- Contact us -->
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-	<title>Contact Us!</title>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-	<link href="http://icons.iconarchive.com/icons/shiftercat/rose/256/Rose-Cerise-icon.png" type="image/png" rel="icon">
-	<link rel="stylesheet" type="text/css" href="css/main.css">
-	<link rel="stylesheet" type="text/css" href="css/contact.css">
-</head>
-
-<body>
-	<!--NOTE: Rubric said that every page needs a header-->
-	<header class="header">
-		<nav id="top-nav" class="top-nav">
-			<a class="link" href="index.html"><img alt="Succulent Store" src= "Images/logo.PNG" class= "nav-logo"></a>
-			<div class="nav-links">
-				<a class="nav-link" href="index.html">Home</a>
-				<a class="nav-link" href="shop.html">Shop</a>
-				<a class="nav-link" href="local.html">Local</a>
-				<a class="nav-link current-page" href="contact.html">Contact Us</a>
-			</div>
-		</nav>
-		<div class="page-header">
-			<h1 class="header-title">Mackenzie's <br> Succulents</h1>
-			<p class="header-caption">Here be succulents</p>
-		</div>
-	</header>
-	<div class="content">
+---
+layout: default
+title: Mackenzie's Guide to Succulents
+name: contact
+---
 		<form class="contact-form" name="contact form" action="contact.html" method="get">
 			<h2 id="title" class="contact-title">Contact Us Today!</h2>
 			<p class="contact-desc">Questions? Comments? Concerns? Just want to chat? Feel free to leave a note or two down below! Our specialists work everyday from 9-5 pm EST (with a one hour lunch break usually around 12 pm). Please do not hesitate to contact us, even if it is about your cheating ex-boyfriend. We here at Succulent Store care about our customers and even their messy dating lives!</p>
@@ -54,68 +28,8 @@
 			</div>
 		</form>
 	</div>
-	<footer class="footer">
-		<div class="footer-content">
-			<br>
-			<div class="footer-col">
-				<div class="footer-row">
-					<a href="index.html" class="footer-link">Home</a>
-				</div>
-				<div class="footer-row">
-					<a href="shop.html" class="footer-link">Store</a>
-				</div>
-				<div class="footer-row">
-					<a href="local.html" class="footer-link">Local</a>
-				</div>
-				<div class="footer-row">
-					<a href="contact.html" class="footer-link">Contact</a>
-				</div>
-			</div>
-			<br>
-			<div class="footer-col">
-				<div class="footer-row">
-					<a href="https://mchy8.github.io/Portfolio/index.html" class="footer-link">Site</a>
-				</div>
-				<div class="footer-row">
-					<a href="https://github.com/mchy8/" class="footer-link">Github</a>
-				</div>
-				<div class="footer-row">
-					<a href="https://github.com/mchy8/mchy8.github.io/tree/master/Portfolio" class="footer-link">Source</a>
-				</div>
-			</div>
-			<br>
-			<div class="footer-col  footer-title">
-				<div class="footer-row">
-					<a class="link" href="index.html">
-						 <h1>Succulent Store</h1>
-					</a>
-				</div>
-			</div>
-		</div>
-		<div class="footer-bottom">
-			<div class="footer-col wide-col">
-					<div class="footer-row">
-						<span class="footer-year">2018</span>
-						<a href="index.html" class="footer-link footer-site">Succulent store</a>
-				</div>
-				<br>
-				<div class="footer-row">
-					This site was created for the amazing and highly rated portfolio of <a href="https://github.com/mchy8/" class="footer-link">Mackenzie</a>
-				</div>
-			</div>
-			<br>
-			<div class="footer-col">
-				<div class="footer-row">
-					<a href="#" class="footer-link">Back to top</a>
-				</div>
-				<br>
-				<div class="footer-row">
-					<div id="google_translate_element"></div>
-				</div>
-			</div>
-		</div>
-	</footer>
-	<script type="text/javascript">
+	{% include footer.html %}
+		<script type="text/javascript">
 		function googleTranslateElementInit() {
 		  new google.translate.TranslateElement({pageLanguage: 'en', layout: google.translate.TranslateElement.InlineLayout.SIMPLE}, 'google_translate_element');
 			styleElement();
